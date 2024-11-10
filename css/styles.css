@@ -1,0 +1,145 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 20px;
+    line-height: 1.5rem;
+}
+a{
+    color: #2705be;
+    text-decoration: none;
+}
+a:hover{
+    color: #331f01;
+    border-bottom: #2705be 1px solid;
+}
+i{
+   font-size: 20px;
+}
+.nav{
+    background-color: #e6f7f4;
+}
+.container{
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+ul{
+    list-style: none;
+}
+.nav-li{
+    display: inline;
+    padding: 10px;
+}
+.logo {
+    margin: 0 10px 0 0;
+    width: 15%;
+}
+.menu{
+    width: 30%;
+}
+.search{
+    margin: 10px;
+}
+.icon{
+    margin: 10px;
+}
+.icon a i{
+    font-size: 28px;
+}
+.icon:hover{
+    cursor: pointer;
+}
+.cta{
+    padding: 5px;
+    width: 15%;
+    margin: 5px 50px;
+}
+.cta a:hover, .icon a:hover, .card a:hover{
+    border: none;
+}
+.searchForm{
+    align-items: center;
+    display: flex;
+    flex-wrap: nowrap;
+}
+.btn-search{
+    background-color: #2705be;
+    border: none;
+    padding: 3px;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    color: #e6f7f4;
+}
+.searchinput{
+    border: 2px solid #331f01;
+    padding: 1px;
+}
+.btn-primary{
+    margin: 5px 0;
+   padding: 5px 10px;
+   background-color: #2705be;
+   color: #e6f7f4;
+   border: none;
+   border-radius: 5px;
+}
+.btn-primary:hover{
+    cursor: pointer;
+    background-color: #e6f7f4;
+    color: #2705be;
+    border: 1px solid #2705be;
+    box-shadow: #331f01 1px 1px 1px;
+}
+.col-1{
+    margin: 10px 20px 10px 0;
+    width: 12.5%;
+}
+.col-2{
+    margin: 10px 20px 10px 0;
+    width: 25%;
+}
+.col-3{
+    margin: 10px 20px 10px 0;
+    width: 50%;
+}
+.col-4{
+    margin: 10px 20px 10px 0;
+    width: 75%;
+}
+.col-5{
+    width: 100%;
+}
+
+
+.hero-img{
+    width: 600px;
+    aspect-ratio: 3/2;
+    border-radius: 5px;
+}
+.card{
+    background-color: #e6f7f4;
+    margin: 10px 10px 10px 0;
+    box-shadow: #331f018a 3px 2px 5px;
+    border-radius: 5px;
+}
+.card h5{
+    padding: 10px;
+}
+.card img{
+    width: 400px;
+    aspect-ratio: 3/2;
+    border-radius: 5px  5px 0 0;
+}
+@media screen  and (max-width:768px){
+    .container{
+        flex-wrap: wrap;
+    }
+    .col-1, .col-2, .col-3, .col-4{
+        width: 100%;
+    }
+   .hero-img{
+    width: 100%;
+   }
+}
