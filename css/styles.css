@@ -92,6 +92,19 @@ ul{
     border: 1px solid #2705be;
     box-shadow: #331f01 1px 1px 1px;
 }
+.btn-primary-outline{
+    margin: 5px 0;
+    padding: 5px 10px;
+    background-color: #e6f7f4;
+    color: #2705be;
+    border: #2705be 1px solid;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btn-primary-outline:hover{
+    background-color: #2705be;
+    color: #e6f7f4;
+}
 .col-1{
     margin: 10px 20px 10px 0;
     width: 12.5%;
@@ -224,7 +237,7 @@ margin: 10px 0;
 }
 
 .darkmode .logos {
-    background-color: #222;
+    background-color: #868686;
 }
 .darkmode .logos img{
     mix-blend-mode: normal;

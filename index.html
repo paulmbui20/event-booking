@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="font-awsome/all.min.css" />
     <title>CSS grid</title>
@@ -15,17 +16,14 @@
             <h1><a href="index.html">Logo</a></h1>
           </div>
           <div id="menu" class="menu">
-            <button class="menu-toggle" onclick="toggleMenu()">
-              <i class="fa fa-bars"></i>
-            </button>
-            <ul class="menu-list">
+            <ul>
               <li class="nav-li"><a href="#">Home</a></li>
               <li class="nav-li"><a href="#">Events</a></li>
               <li class="nav-li"><a href="#">About</a></li>
               <li class="nav-li"><a href="#">Contact</a></li>
             </ul>
           </div>
-          <div id="search" class="search menu-list">
+          <div id="search" class="search">
             <form class="searchForm" action="" method="get">
               <input
                 class="searchinput"
@@ -39,38 +37,99 @@
               </button>
             </form>
           </div>
-          <div id="cta" class="cta menu-list">
+          <div id="cta" class="cta">
             <a href="#">
               <button class="btn-primary" type="button">Add Event</button>
             </a>
           </div>
-          <div id="icon" class="icon menu-list">
+          <div id="icon" class="icon">
             <button type="button" class="btn-primary-outline" onclick="darkmode()"><i class="fa fa-moon"></i></button>
           </div>
         </div>
       </nav>
     </header>
     <main>
-      <div class="container">
-         
-        <div class="col-3">
-          <span>music</span>
-          <h2>Wakadinali event</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
-            possimus obcaecati, ut quidem libero hic facere modi illo suscipit
-            molestias, voluptas sint recusandae eius officia illum nostrum
-            praesentium quisquam nobis!
-          </p>
-          <button class="btn-primary" type="button">Book ticket</button>
-        </div>
-        <div class="col-2">
-          <img class="hero-img" src="img/palm.jpg" alt="" />
-        </div>
+
+      <!-- Slider main container -->
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <div class="container">
+            <div class="col-3">
+              <span>music</span>
+              <h2>Wakadinali event</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
+                possimus obcaecati, ut quidem libero hic facere modi illo
+                suscipit molestias, voluptas sint recusandae eius officia illum
+                nostrum praesentium quisquam nobis!
+              </p>
+              <button class="btn-primary" type="button">Book ticket</button>
+            </div>
+            <div class="col-2">
+              <img class="hero-img" src="img/palm.jpg" alt="" />
+            </div>
+          </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="container">
+              <div class="col-3">
+                <span>music</span>
+                <h2>Wakadinali event</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
+                  possimus obcaecati, ut quidem libero hic facere modi illo
+                  suscipit molestias, voluptas sint recusandae eius officia illum
+                  nostrum praesentium quisquam nobis!
+                </p>
+                <button class="btn-primary" type="button">Book ticket</button>
+              </div>
+              <div class="col-2">
+                <img class="hero-img" src="img/palm.jpg" alt="" />
+              </div>
+            </div>
+            </div>
+          <div class="swiper-slide">
+            <div class="container">
+              <div class="col-3">
+                <span>music</span>
+                <h2>Wakadinali event</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
+                  possimus obcaecati, ut quidem libero hic facere modi illo
+                  suscipit molestias, voluptas sint recusandae eius officia illum
+                  nostrum praesentium quisquam nobis!
+                </p>
+                <button class="btn-primary" type="button">Book ticket</button>
+              </div>
+              <div class="col-2">
+                <img class="hero-img" src="img/palm.jpg" alt="" />
+              </div>
+            </div>
+            </div>
+          </div>
+                </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
       </div>
 
-      <div class="container"><h2>Our clients and partners</h2></div>
-      <div class="container"></div>
+      <div class="container my-1">
+        <h2>Our clients and partners</h2>
+      </div>
+      <div class="container logos">
+        <img src="img/google.png" alt="google" />
+        <img src="img/netflix.png" alt="netflix" />
+        <img src="img/microsoft.png" alt="microsoft" />
+        <img src="img/safaricom.png" alt="safaricom" />
+        <img src="img/huawei.png" alt="Huawei" />
+        <img src="img/amazon.webp" alt="amazon" />
+      </div>
       <div class="container">
         <h2>Popular/upcoming events</h2>
       </div>
@@ -114,6 +173,9 @@
       </div>
     </main>
 
+    <button class="scroll-to-top-btn" onclick="scrollToTop()">↑</button>
     <footer></footer>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
