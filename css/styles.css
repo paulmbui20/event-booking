@@ -249,7 +249,14 @@ margin: 10px 0;
 .darkmode .swiper {
     background-color: #1b1b1b;
 }
+.menu-list {
+    display: flex;
+    gap: 20px;
+}
 
+.menu-toggle {
+    display: none; /* Hide the toggle button on larger screens */
+}
 @media screen  and (max-width:768px){
     .container{
         flex-wrap: wrap;
@@ -266,4 +273,35 @@ margin: 10px 0;
    .swiper-button-prev, .swiper-button-next, .swiper-pagination{
     display: none;
    }
+   /* Hide the menu items by default on mobile */
+   .menu-list {
+    align-self: center;
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    background-color: #e6f7f4; /* Optional: change background color */
+    padding: 10px;
+}
+
+/* Show the menu list when .show class is active */
+.menu-list.show {
+    display: flex;
+}
+
+/* Show the toggle button on smaller screens */
+.menu-toggle {
+    display: inline-block;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #2705be; /* Icon color */
+}
+
+/* Align icon and logo */
+.logo {
+    width: 60%;
+}
+
 }

@@ -32,3 +32,8 @@ function scrollToTop() {
 function darkmode() {
     document.body.classList.toggle("darkmode");
  }
+
+ //menu toggle
+ function toggleMenu() {
+    document.querySelector(".menu-list").classList.toggle("show");
+  }

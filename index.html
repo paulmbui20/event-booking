@@ -16,14 +16,17 @@
             <h1><a href="index.html">Logo</a></h1>
           </div>
           <div id="menu" class="menu">
-            <ul>
+            <button class="menu-toggle" onclick="toggleMenu()">
+              <i class="fa fa-bars"></i>
+            </button>
+            <ul class="menu-list">
               <li class="nav-li"><a href="#">Home</a></li>
               <li class="nav-li"><a href="#">Events</a></li>
               <li class="nav-li"><a href="#">About</a></li>
               <li class="nav-li"><a href="#">Contact</a></li>
             </ul>
           </div>
-          <div id="search" class="search">
+          <div id="search" class="search menu-list">
             <form class="searchForm" action="" method="get">
               <input
                 class="searchinput"
@@ -37,12 +40,12 @@
               </button>
             </form>
           </div>
-          <div id="cta" class="cta">
+          <div id="cta" class="cta menu-list">
             <a href="#">
               <button class="btn-primary" type="button">Add Event</button>
             </a>
           </div>
-          <div id="icon" class="icon">
+          <div id="icon" class="icon menu-list">
             <button type="button" class="btn-primary-outline" onclick="darkmode()"><i class="fa fa-moon"></i></button>
           </div>
         </div>
