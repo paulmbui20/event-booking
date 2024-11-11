@@ -19,9 +19,6 @@ const swiper = new Swiper('.swiper', {
   });
 swiper.slideNext()
 //back to top button code
-const mobileMenu = document.getElementById("mobile-menu");
-const menuItems = document.getElementById("menu-items");
-
 function scrollToTop() {
   window.scrollTo({
     top: 0,
@@ -32,8 +29,3 @@ function scrollToTop() {
 function darkmode() {
     document.body.classList.toggle("darkmode");
  }
-
- //menu toggle
- function toggleMenu() {
-    document.querySelector(".menu-list").classList.toggle("show");
-  }
