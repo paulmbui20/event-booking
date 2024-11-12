@@ -32,3 +32,17 @@ function scrollToTop() {
 function darkmode() {
     document.body.classList.toggle("darkmode");
  }
+
+ function menutoggle(){
+  const hamburgerIcon = document.getElementById("hamburgerIcon");
+  menu = document.querySelector(".menu-content");
+  menu.classList.toggle("hidden");
+  if (menu.classList.contains("hidden")){
+    hamburgerIcon.classList.remove("fa-times");
+    hamburgerIcon.classList.add("fa-bars");
+
+  } else{
+    hamburgerIcon.classList.remove("fa-bars");
+    hamburgerIcon.classList.add("fa-times");
+  }
+ }

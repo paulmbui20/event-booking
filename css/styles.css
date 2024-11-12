@@ -16,8 +16,29 @@ a:hover{
 i{
    font-size: 20px;
 }
+.border-none, .border-none:hover{
+    border: none;
+}
 .nav{
     background-color: #e6f7f4;
+    display: flex;
+    padding: 5px 25px;
+    justify-content: space-evenly;
+    box-shadow: #86868675 2px 2px 2px;
+    align-items: center;
+}
+.nav ul li{
+    display: inline;
+    margin: 20px;
+}
+
+.logo{
+    width: 20%;
+    font-size: 50px;
+    padding: 20px 30px 20px 0;
+}
+.mobile-menu{
+    display: none;
 }
 .container{
     padding: 25px;
@@ -29,42 +50,6 @@ i{
 ul{
     list-style: none;
 }
-.nav-li{
-    display: inline;
-    padding: 10px;
-}
-.logo {
-    margin: 0 10px 0 0;
-    width: 15%;
-}
-.menu{
-    width: 30%;
-}
-.search{
-    margin: 10px;
-}
-.icon{
-    margin: 10px;
-}
-.icon a i{
-    font-size: 28px;
-}
-.icon:hover{
-    cursor: pointer;
-}
-.cta{
-    padding: 5px;
-    width: 15%;
-    margin: 5px 50px;
-}
-.cta a:hover, .icon a:hover, .card a:hover{
-    border: none;
-}
-.searchForm{
-    align-items: center;
-    display: flex;
-    flex-wrap: nowrap;
-}
 .btn-search{
     background-color: #2705be;
     border: none;
@@ -72,6 +57,11 @@ ul{
     border-radius: 0 5px 5px 0;
     cursor: pointer;
     color: #e6f7f4;
+}
+.searchForm{
+    align-items: center;
+    display: flex;
+    flex-wrap: nowrap;
 }
 .searchinput{
     border: 2px solid #331f01;
@@ -249,10 +239,27 @@ margin: 10px 0;
 .darkmode .swiper {
     background-color: #1b1b1b;
 }
-
+.hidden{
+    display: none;
+}
 @media screen  and (max-width:768px){
     .container{
         flex-wrap: wrap;
+    }
+    .menu-lg{
+        display: none;
+    }
+    .mobile-menu{
+        display: block;
+    }
+    .menu-list{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .searchForm{
+        padding: 5px 60px;
     }
     .col-1, .col-2, .col-3, .col-4{
         width: 100%;
