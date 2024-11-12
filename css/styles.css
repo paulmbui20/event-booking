@@ -2,7 +2,6 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-size: 20px;
     line-height: 1.5rem;
 }
 a{
@@ -63,7 +62,7 @@ i{
 }
 .darkmode .dropdown-items{
     background-color: #444;
-    
+
 }
 .container{
     padding: 25px;
@@ -121,30 +120,46 @@ ul{
     color: #e6f7f4;
 }
 .col-1{
-    margin: 10px 20px 10px 0;
+ 
     width: 12.5%;
 }
 .col-2{
-    margin: 10px 20px 10px 0;
+   
     width: 25%;
 }
 .col-3{
-    margin: 10px 20px 10px 0;
+    
     width: 50%;
 }
 .col-4{
-    margin: 10px 20px 10px 0;
+  
     width: 75%;
 }
 .col-5{
     width: 100%;
 }
 
-
+.centre{
+   display: flex;
+   gap: 10px;
+   flex-direction: column;
+   align-items: center;
+}
+.centre h2{
+    font-size: 40px;
+    line-height: 1.75em;
+}
+.centre p i{
+   margin: 10px;
+}
+.centre span{
+    padding: 20px ;
+}
 .hero-img{
     width: 600px;
     aspect-ratio: 3/2;
     border-radius: 5px;
+    margin-left: 10px;
 }
 .card{
     background-color: #e6f7f4;
@@ -152,8 +167,9 @@ ul{
     box-shadow: #331f018a 3px 2px 5px;
     border-radius: 5px;
 }
-.card h5{
+.card h2{
     padding: 10px;
+    text-align: center;
 }
 .card img{
     width: 400px;
