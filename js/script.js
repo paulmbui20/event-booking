@@ -53,9 +53,6 @@ dropdownItems.addEventListener("mouseleave", hoverhide);
 function hoverhide() {
   dropdownItems.classList.add("hidden");
 }
-function hovershow() {
-  dropdownItems.classList.remove("hidden");
-}
 function hover() {
   dropdownItems.classList.toggle("hidden");
 }
