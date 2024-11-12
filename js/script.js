@@ -50,9 +50,11 @@ const dropdownItems = document.getElementById("dropdown-items");
 dropdown.addEventListener("mouseover", hover);
 dropdownItems.addEventListener("mouseover", hover);
 dropdownItems.addEventListener("mouseleave", hoverhide);
-dropdown.addEventListener("click", hover);
 function hoverhide() {
   dropdownItems.classList.add("hidden");
+}
+function hovershow() {
+  dropdownItems.classList.remove("hidden");
 }
 function hover() {
   dropdownItems.classList.toggle("hidden");
