@@ -60,7 +60,10 @@ i{
     display: flex;
     flex-direction: column;
     background-color: #e6f7f4;
-
+}
+.darkmode .dropdown-items{
+    background-color: #444;
+    
 }
 .container{
     padding: 25px;
