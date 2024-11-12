@@ -40,6 +40,13 @@ i{
 .mobile-menu{
     display: none;
 }
+.menu{
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
 .container{
     padding: 25px;
     display: flex;
@@ -276,4 +283,9 @@ margin: 10px 0;
    .swiper{
     height: auto;
    }
+}
+@media screen and (max-width:853) {
+    /* .searchForm{
+        padding: auto;
+    } */
 }
