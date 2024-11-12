@@ -321,9 +321,9 @@ margin: 10px 0;
     }
 
     .searchForm{
-        padding: 5px 60px;
+        padding: 5px 90px;
     }
-    .col-1, .col-2, .col-3, .col-4{
+    .col-1, .col-2, .col-3, .col-4, .col-30, .col-40{
         width: 100%;
     }
    .hero-img{
@@ -338,9 +338,7 @@ margin: 10px 0;
    .swiper{
     height: auto;
    }
-}
-@media screen and (max-width:853) {
-    /* .searchForm{
-        padding: auto;
-    } */
+   .centre h2{
+    font-size: 30px;
+   }
 }
