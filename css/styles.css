@@ -1,9 +1,21 @@
+@font-face {
+    font-family: headingFont;
+    src: url(../webfonts/Cinzel-VariableFont_wght.ttf);
+  }
+@font-face {
+    font-family: Lato;
+    src: url(../webfonts/Lato-Regular.ttf);
+}
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     line-height: 1.5rem;
+    font-family: Lato;
 }
+h1, h2, h3, h4, h5, h6{
+    font-family: headingFont;
+  }
 a{
     color: #2705be;
     text-decoration: none;
@@ -137,6 +149,12 @@ ul{
 }
 .col-5{
     width: 100%;
+}
+.col-30{
+    width: 30%;
+}
+.col-40{
+    width: 40%;
 }
 
 .centre{
