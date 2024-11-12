@@ -1,94 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="css/styles.css" />
-    <link rel="stylesheet" href="font-awsome/all.min.css" />
-    <title>CSS grid</title>
-  </head>
-  <body>
-    <header>
-      <nav class="nav menu-lg">
-      
-            <h2 class="col-1"><a href="index.html">Logo</a></h2>
-         
-            <ul class="col-3">
-              <li class="nav-li"><a href="#">Home</a></li>
-              <li class="nav-li"><a href="#">Events</a></li>
-              <li class="nav-li"><a href="#">About</a></li>
-              <li class="nav-li"><a href="#">Contact</a></li>
-            </ul>
-          
-            <form class="searchForm col-2" action="" method="get">
-              <input
-                class="searchinput"
-                placeholder="Search Events..."
-                type="text"
-                name="search"
-                id="searchform"
-              />
-              <button class="btn-search" type="submit">
-                <i class="fa fa-search"></i>
-              </button>
-            </form>
-        
-            <a class="border-none col-1" href="#">
-              <button class="btn-primary" type="button">Add Event</button>
-            </a>
-       
-            <button type="button" class="btn-primary-outline" onclick="darkmode()"><i class="fa fa-moon"></i></button>
-      </nav>
-      <nav class="nav mobile-menu">
-        <div class="menu">
-                <div class="item">
-         <a class="logo" href="index.html">Logo</a>
-        
-   
-      </div>
-      <div class="item">
-        <a class="border-none" href="#">
-          <button class="btn-primary" type="button">Add Event</button>
-        </a>
-                <button type="button" class="btn-primary-outline" onclick="darkmode()"><i class="fa fa-moon"></i></button>
-      
-                <button type="button" class="btn-primary-outline hamburger" onclick="menutoggle()"><i id="hamburgerIcon" class="fa fa-bars"></i></button>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="font-awsome/all.min.css" />
+  <title>CSS grid</title>
+</head>
+
+<body>
+  <header>
+    <nav class="nav menu-lg">
+      <div class="menu">
+        <div class="item">
+          <h2 class=""><a href="index.html">Logo</a></h2>
         </div>
-        
+        <div class="item">
+          <ul class="">
+            <li class="nav-li"><a href="#">Home</a></li>
+            <li class="nav-li"><a href="#">Events</a></li>
+            <li class="nav-li"><a href="#">About</a></li>
+            <li class="nav-li"><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="item">
+          <form class="searchForm " action="" method="get">
+            <input class="searchinput" placeholder="Search Events..." type="text" name="search" id="searchform" />
+            <button class="btn-search" type="submit">
+              <i class="fa fa-search"></i>
+            </button>
+          </form>
+        </div>
+        <div class="item"> <a class="border-none" href="#">
+            <button class="btn-primary" type="button">Add Event</button>
+          </a>
+
+          <button type="button" class="btn-primary-outline" onclick="darkmode()"><i class="fa fa-moon"></i></button>
         </div>
 
-        <div class=" menu-content hidden">
-          <ul class="menu-list">
+      </div>
+
+
+
+
+
+
+    </nav>
+    <nav class="nav mobile-menu">
+      <div class="menu">
+        <div class="item">
+          <a class="logo" href="index.html">Logo</a>
+
+
+        </div>
+        <div class="item">
+          <a class="border-none" href="#">
+            <button class="btn-primary" type="button">Add Event</button>
+          </a>
+          <button type="button" class="btn-primary-outline" onclick="darkmode()"><i class="fa fa-moon"></i></button>
+
+          <button type="button" class="btn-primary-outline hamburger" onclick="menutoggle()"><i id="hamburgerIcon"
+              class="fa fa-bars"></i></button>
+        </div>
+
+      </div>
+
+      <div class=" menu-content hidden">
+        <ul class="menu-list">
           <li class="nav-li"><a href="#">Home</a></li>
           <li class="nav-li"><a href="#">Events</a></li>
           <li class="nav-li"><a href="#">About</a></li>
           <li class="nav-li"><a href="#">Contact</a></li>
         </ul>
         <form class="searchForm" action="" method="get">
-          <input
-            class="searchinput"
-            placeholder="Search Events..."
-            type="text"
-            name="search"
-            id="searchform"
-          />
+          <input class="searchinput" placeholder="Search Events..." type="text" name="search" id="searchform" />
           <button class="btn-search" type="submit">
             <i class="fa fa-search"></i>
           </button>
         </form>
       </div>
-      </nav>
-    </header>
-    <main>
+    </nav>
+  </header>
+  <main>
 
-      <!-- Slider main container -->
-      <div class="swiper">
-        <!-- Additional required wrapper -->
-        <div class="swiper-wrapper">
-          <!-- Slides -->
-          <div class="swiper-slide">
-            <div class="container">
+    <!-- Slider main container -->
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+          <div class="container">
             <div class="col-3">
               <span>music</span>
               <h2>Wakadinali event</h2>
@@ -104,110 +107,111 @@
               <img class="hero-img" src="img/palm.jpg" alt="" />
             </div>
           </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="container">
-              <div class="col-3">
-                <span>music</span>
-                <h2>Wakadinali event</h2>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
-                  possimus obcaecati, ut quidem libero hic facere modi illo
-                  suscipit molestias, voluptas sint recusandae eius officia illum
-                  nostrum praesentium quisquam nobis!
-                </p>
-                <button class="btn-primary" type="button">Book ticket</button>
-              </div>
-              <div class="col-2">
-                <img class="hero-img" src="img/palm.jpg" alt="" />
-              </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="container">
+            <div class="col-3">
+              <span >music</span>
+              <h2>Wakadinali event</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
+                possimus obcaecati, ut quidem libero hic facere modi illo
+                suscipit molestias, voluptas sint recusandae eius officia illum
+                nostrum praesentium quisquam nobis!
+              </p>
+              <button class="btn-primary" type="button">Book ticket</button>
             </div>
-            </div>
-          <div class="swiper-slide">
-            <div class="container">
-              <div class="col-3">
-                <span>music</span>
-                <h2>Wakadinali event</h2>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
-                  possimus obcaecati, ut quidem libero hic facere modi illo
-                  suscipit molestias, voluptas sint recusandae eius officia illum
-                  nostrum praesentium quisquam nobis!
-                </p>
-                <button class="btn-primary" type="button">Book ticket</button>
-              </div>
-              <div class="col-2">
-                <img class="hero-img" src="img/palm.jpg" alt="" />
-              </div>
-            </div>
+            <div class="col-2">
+              <img class="hero-img" src="img/palm.jpg" alt="" />
             </div>
           </div>
-                </div>
-        <!-- If we need pagination -->
-        <div class="swiper-pagination"></div>
+        </div>
+        <div class="swiper-slide">
+          <div class="container">
+            <div class="col-3">
+              <span>Comedy</span>
+              <h2>Laugh spa</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
+                possimus obcaecati, ut quidem libero hic facere modi illo
+                suscipit molestias, voluptas sint recusandae eius officia illum
+                nostrum praesentium quisquam nobis!
+              </p>
+              <button class="btn-primary" type="button">Book ticket</button>
+            </div>
+            <div class="col-2">
+              <img class="hero-img" src="img/palm.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--pagination -->
+    <!-- <div class="swiper-pagination"></div> -->
 
-        <!-- If we need navigation buttons -->
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-      </div>
+    <!-- navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+    </div>
 
-      <div class="container my-1">
-        <h2>Our clients and partners</h2>
+    <div class="container my-1">
+      <h2>Our clients and partners</h2>
+    </div>
+    <div class="container logos">
+      <img src="img/google.png" alt="google" />
+      <img src="img/netflix.png" alt="netflix" />
+      <img src="img/microsoft.png" alt="microsoft" />
+      <img src="img/safaricom.png" alt="safaricom" />
+      <img src="img/huawei.png" alt="Huawei" />
+      <img src="img/amazon.webp" alt="amazon" />
+    </div>
+    <div class="container">
+      <h2>Popular/upcoming events</h2>
+    </div>
+    <div class="container">
+      <div class="card">
+        <a class="border-none" href="#">
+          <img src="img/palm.jpg" alt="" />
+          <h5>Sarit expo</h5>
+        </a>
       </div>
-      <div class="container logos">
-        <img src="img/google.png" alt="google" />
-        <img src="img/netflix.png" alt="netflix" />
-        <img src="img/microsoft.png" alt="microsoft" />
-        <img src="img/safaricom.png" alt="safaricom" />
-        <img src="img/huawei.png" alt="Huawei" />
-        <img src="img/amazon.webp" alt="amazon" />
+      <div class="card">
+        <a class="border-none" href="#">
+          <img src="img/palm.jpg" alt="" />
+          <h5>Sarit expo</h5>
+        </a>
       </div>
-      <div class="container">
-        <h2>Popular/upcoming events</h2>
+      <div class="card">
+        <a class="border-none" href="#">
+          <img src="img/palm.jpg" alt="" />
+          <h5>Sarit expo</h5>
+        </a>
       </div>
-      <div class="container">
-        <div class="card">
-          <a class="border-none" href="#">
-            <img src="img/palm.jpg" alt="" />
-            <h5>Sarit expo</h5>
-          </a>
-        </div>
-        <div class="card">
-          <a class="border-none" href="#">
-            <img src="img/palm.jpg" alt="" />
-            <h5>Sarit expo</h5>
-          </a>
-        </div>
-        <div class="card">
-          <a class="border-none" href="#">
-            <img src="img/palm.jpg" alt="" />
-            <h5>Sarit expo</h5>
-          </a>
-        </div>
-        <div class="card">
-          <a class="border-none" href="#">
-            <img src="img/palm.jpg" alt="" />
-            <h5>Sarit expo</h5>
-          </a>
-        </div>
-        <div class="card">
-          <a class="border-none" href="#">
-            <img src="img/palm.jpg" alt="" />
-            <h5>Sarit expo</h5>
-          </a>
-        </div>
-        <div class="card">
-          <a class="border-none" href="#">
-            <img src="img/palm.jpg" alt="" />
-            <h5>Sarit expo</h5>
-          </a>
-        </div>
+      <div class="card">
+        <a class="border-none" href="#">
+          <img src="img/palm.jpg" alt="" />
+          <h5>Sarit expo</h5>
+        </a>
       </div>
-    </main>
+      <div class="card">
+        <a class="border-none" href="#">
+          <img src="img/palm.jpg" alt="" />
+          <h5>Sarit expo</h5>
+        </a>
+      </div>
+      <div class="card">
+        <a class="border-none" href="#">
+          <img src="img/palm.jpg" alt="" />
+          <h5>Sarit expo</h5>
+        </a>
+      </div>
+    </div>
+  </main>
 
-    <button class="scroll-to-top-btn" onclick="scrollToTop()">↑</button>
-    <footer></footer>
-    <script src="js/swiper-bundle.min.js"></script>
-    <script src="js/script.js"></script>
-  </body>
+  <button class="scroll-to-top-btn" onclick="scrollToTop()">↑</button>
+  <footer></footer>
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
 </html>

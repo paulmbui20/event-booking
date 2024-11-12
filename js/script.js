@@ -1,14 +1,14 @@
 const swiper = new Swiper('.swiper', {
-    speed: 400,
+    speed: 500,
     spaceBetween: 100,
     loop: true,
     autoplay: {
-        delay: 2500,
+        delay: 3000,
         disableOnInteraction: false,
       },
-    pagination: {
-        el: '.swiper-pagination',
-      },
+    // pagination: {
+    //     el: '.swiper-pagination',
+    //   },
       grabCursor: true,
        // Navigation arrows
   navigation: {

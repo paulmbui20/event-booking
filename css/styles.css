@@ -21,11 +21,11 @@ i{
 }
 .nav{
     background-color: #e6f7f4;
-    display: flex;
     padding: 5px 25px;
-    justify-content: space-evenly;
+    /* display: flex;
+    justify-content: space-between; */
     box-shadow: #86868675 2px 2px 2px;
-    align-items: center;
+    /* align-items: center; */
 }
 .nav ul li{
     display: inline;
@@ -160,10 +160,13 @@ margin: 10px 0;
 }
 .swiper {
     width: 100%;
-    height: 85vh;
+    height: auto;
   }
 .swiper-button-prev, .swiper-button-next{
    margin: -10px;
+}
+.swiper-slide span{
+  font-style: italic;  
 }
  /* Style for the back to top floating button */
  .scroll-to-top-btn {
